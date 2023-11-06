@@ -1,0 +1,424 @@
+
+/*__________________________________________________________________________________________________*/
+
+.roadmap-block {
+  background-color: #000;
+  overflow-x: hidden;
+  padding: 50px 0;
+}
+
+/*__________________________________________________________________________________________________*/
+
+/* lighter font weight */
+@font-face {
+  font-family: 'ESL Legend';
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot);
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot#iefix) format("embedded-opentype"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.woff2) format("woff2"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.woff) format("woff"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.ttf) format("truetype"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.svg#eicon) format("svg");
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* the regular font weight */
+@font-face {
+  font-family: 'ESL Legend';
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot);
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot#iefix) format("embedded-opentype"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff2) format("woff2"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff) format("woff"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.ttf) format("truetype"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.svg#eicon) format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* bolder font weight */
+@font-face {
+  font-family: 'ESL Legend';
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.eot);
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.eot#iefix) format("embedded-opentype"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.woff2) format("woff2"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.woff) format("woff"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.ttf) format("truetype"),
+  url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.svg#eicon) format("svg");
+  font-style: normal;
+  font-weight: bold;
+}
+/*__________________________________________________________________________________________________*/
+
+/*styling the container of the title and the tag*/
+.roadmap-title-box{
+  padding: 0 0 30px;
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.roadmap-tag{
+  font-size: 40px;
+  color : rgb(84,89,95)
+}
+
+.roadmap-title{
+  background-image: url(./icones/green_yellow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 80px;
+}
+/*__________________________________________________________________________________________________*/
+.roadmap {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*__________________________________________________________________________________________________*/
+
+/* the line */
+.roadmap_line{
+  width: 2px;
+  background-color: #393935;
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  bottom: 0;
+  overflow: hidden;
+
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.roadmap_line-progress {
+  width: 100%;
+  height: 20%;
+  background-color: #FF0;
+}
+
+/*__________________________________________________________________________________________________*/
+
+.roadmap-box{
+  padding: 0 0 20px 50%;
+}
+
+/*__________________________________________________________________________________________________*/
+
+
+.roadmap-inside-box {
+
+  height: 60px;
+  line-height: 60px;
+  width: 60px;
+  border: 3px solid #FF0;
+  background-color: #1d1d1b;
+
+  text-align: center;
+  font-family: 'ESL Legend', sans-serif;
+  font-size: 20px;
+  color: #FFF;
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.roadmap-inside-box :nth-child(2){
+  padding: 0 0 20px 0;
+}
+
+/*__________________________________________________________________________________________________*/
+
+ /*if active is true this will apply  JS  */
+.js-active .roadmap-inside-box {
+  color: #1d1d1b;
+  background-color: #FF0;
+}
+/*__________________________________________________________________________________________________*/
+/*aline the seconde cheldren to the right */
+.roadmap_item:nth-child(2n) {
+  text-align: right;
+}
+/*aline the content of the  seconde cheldren to left */
+.roadmap-card_description:nth-child(2n) {
+  text-align: left;
+}
+.roadmap_item{
+  margin: 0 0 50px;
+  position: relative;
+}
+
+/*__________________________________________________________________________________________________*/
+.roadmap-title-bscreen {
+  display: inline-block;
+}
+
+
+.roadmap_item:nth-child(odd) .roadmap-title-bscreen {
+  position: relative;
+  bottom: 88px;
+  left: 45px;
+  flex: 1;
+  font-family: 'ESL Legend', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  color: #FF0;
+ }
+ 
+ .roadmap_item:nth-child(even) .roadmap-title-bscreen {
+  position: relative;
+  bottom: 88px;
+  left: -610px;
+  flex: 1;
+  font-family: 'ESL Legend', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  color: #FF0;
+ }
+
+/*__________________________________________________________________________________________________*/
+
+.roadmap-card_item{
+  
+  display : inline-block;
+  width : 45%;
+  margin: -77px 0 0 auto;
+  background-color: #282828;
+  opacity: 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+
+  -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+  -moz-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+  -o-box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+  box-shadow: 0 0 0 0 rgba(0,0,0,.5);
+
+  -webkit-transition: -webkit-transform .5s, opacity .5s;
+  -moz-transition: -moz-transform .5s, opacity .5s;
+  -o-transition: -o-transform .5s, opacity .5s;
+  transition: transform .5s, opacity .5s;
+  position: relative;
+    
+}
+
+
+ .roadmap_item:nth-child(2n+1) .roadmap-card_item {
+  -webkit-transform: translateX(-200%);
+  -moz-transform: translateX(-200%);
+  -ms-transform: translateX(-200%);
+  -o-transform: translateX(-200%);
+  transform: translateX(-200%);
+}
+
+
+.roadmap_item:nth-child(2n) .roadmap-card_item  { 
+  -webkit-transform: translateX(200%);
+  -moz-transform: translateX(200%);
+  -ms-transform: translateX(200%);
+  -o-transform: translateX(200%);
+  transform: translateX(200%);
+} 
+
+/*when active is true this will applay:     JS */
+
+.js-active.roadmap_item:nth-child(2n+1) .roadmap-card_item,
+.js-active.roadmap_item:nth-child(2n) .roadmap-card_item {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.roadmap-card_item {
+  position: relative;
+  z-index: 2;
+  bottom: 80px;
+}
+  
+/*__________________________________________________________________________________________________*/
+  /*image and info*/
+
+.roadmap-card_img{
+  width: 100%;
+}
+
+.roadmap-card_info {
+  padding: 20px 30px;
+} 
+.roadmap-card_title{
+  display: none;
+}
+
+.roadmap-card_description {
+  line-height: 1.45;
+  font-size: 16px;
+  color: #FFF;
+}
+
+/*__________________________________________________________________________________________________*/
+
+.roadmap-card_arrow{
+  height: 18px;
+  width: 18px;
+  margin-top: 20px;
+  background-color: #282828;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+/* arrow*/
+.roadmap_item:nth-child(2n+1) .roadmap-card_arrow {
+  margin-left: calc(-18px / 2);
+  margin-right: calc(-18px / 2);
+}
+.roadmap_item:nth-child(2n) .roadmap-card_arrow {
+  margin-left: -10px;
+  right: auto;
+  left: 0;
+}
+
+/*__________________________________________________________________________________________________*/
+
+@media only screen and (max-width: 979px) {
+
+  .roadmap_line {
+    left: 30px;
+  }
+  .roadmap-inside-box{
+    position: relative;
+    right: 88%;
+  }
+  .roadmap-inside-box,
+  .roadmap_item:nth-child(2n) .roadmap-inside-box {
+    padding: 0 0 20px;
+  }
+  .roadmap-title-bscreen{
+    display: none;
+  }
+
+
+  .roadmap_item:nth-child(2n+1) .roadmap-card_arrow {
+    right: auto;
+    left: 0;
+  }
+
+  .roadmap-card_arrow {
+    margin-top: 20px;
+  }
+  
+  .roadmap-card_title {
+    display: block;
+  }
+  
+.roadmap-card_item {
+  width: auto;
+  margin: -30px 0 0 75px
+}
+  }
+
+/*________________________________________________________________________________________________*/
+
+.list{
+  color: #FFF;
+}
+
+
+/*__________________________________________________________________________________________________*/
+/*the half screen*/
+.halfScreen {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  padding: 50px 20px 0px 20px;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.HalfScreen {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+ 
+ .halfScreen {
+  color: #FFF;
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+ }
+
+/*__________________________________________________________________________________________________*/
+/*close botton   X */
+
+.closeHalfScreen{
+  position:absolute;
+  right: 5px;
+  top: 5px;
+  border-radius: 0%;
+  padding: 10px 15px;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+
+
+}
+
+/*__________________________________________________________________________________________________*/
+
+/*Read More*/
+.openHalfScreen {
+
+  background-color: #282828;
+  color: rgb(205, 255, 26);
+  border-radius: 10em;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid#282828;
+  box-shadow: 0 0 0 0 black;
+  position: absolute;
+  left:  155px;
+  bottom: -66px;
+
+}
+
+button:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 rgb(163, 255, 123)
+};
+
+button:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 rgb(218, 17, 17);
+};
+
+/*___________________________________________________________________________________________________________*/
+/**/
