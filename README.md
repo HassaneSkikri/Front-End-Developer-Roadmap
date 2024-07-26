@@ -4,6 +4,7 @@
 
 Welcome to the Web Development Roadmap project! it's a journey of understanding the global impact of web development. Each section of the roadmap is designed to cater to diverse needs, this roadmap will help you understand the key areas of web development and guide you through your learning journey.
 
+![image](/icones/Animation.gif)
 ## Table of Contents
 
 - [Introduction](#introduction)
