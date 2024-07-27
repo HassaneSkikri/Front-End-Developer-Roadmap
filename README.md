@@ -23,20 +23,4 @@ The Web Development Roadmap project aims to provide a clear path for learning we
 2. **Frontend Development**
    - HTML, CSS, JavaScript, and popular frameworks.
 
-3. **Backend Development**
-   - Server-side languages, databases, and server management.
-
-4. **Version Control**
-   - Git and GitHub for collaborative development.
-
-5. **Responsive Web Design**
-   - Techniques for creating responsive and mobile-friendly websites.
-
-6. **Web Performance Optimization**
-   - Strategies to enhance website speed and performance.
-
-7. **APIs and Microservices**
-   - Building and consuming APIs, microservices architecture.
-
-8. **Security Best Practices**
-   - Common security threats and best practices.
+you can see the website [here](https://front-end-developer-roadmap.vercel.app)
