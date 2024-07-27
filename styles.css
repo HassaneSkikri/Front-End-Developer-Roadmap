@@ -423,3 +423,9 @@ button:active {
 
 /*___________________________________________________________________________________________________________*/
 /**/
+.js-roadmap_item {
+  position: relative;
+  margin-bottom: 50px;
+  padding-left: 50px; 
+}
+
